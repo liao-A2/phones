@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+		<title>Phone</title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<!-- 导航条 -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container" role="navigation">
+				<div class="navbar-header">
+					 <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+					  <span class="sr-only">Toggle Navigation</span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					  <span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="#">手机博物馆展览</a>
+				</div>
+				<div class="collapse navbar-collapse navbar-responsive-collapse">
+					<ul class="nav navbar-nav">
+						<li class="active">
+							<a href="#">宗述</a>
+						</li>
+						<li>
+							<a href="#">简述</a>
+						</li>
+						<li>
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+								特点
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#huawei" data-target="tab">HUAWEI</a>
+								</li>
+								<li>
+									<a href="#millet" data-target="tab">Millet</a>
+								</li>
+								<li>
+									<a href="#iphone" data-target="tab">iPhone</a>
+								</li>
+								<li>
+									<a href="#vivo" data-target="tab">VIVO</a>
+								</li>
+								<li>
+									<a href="#oppo" data-target="tab">OPPO</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a data-target="#about" data-toggle="modal">关于</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- 滚动面板 -->
+		<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		  <!-- Indicators -->
+		  <ol class="carousel-indicators">
+			<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+			<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+		  </ol>
+
+		  <!-- Wrapper for slides -->
+		  <div class="carousel-inner" role="listbox">
+			<div class="item active">
+			  <img src="img/1.jpg" alt="1 slide">
+			  <div class="carousel-caption">
+				<h1>小米</h1>
+				<p>小米手机是一款由小米科技研发、由英华达和富士康代工制造的MIUI平台智能手机。</p>
+			  </div>
+			</div>
+			<div class="item">
+			  <img src="img/2.jpg" alt="2 slide">
+			  <div class="carousel-caption">
+				<h1>小米</h1>
+				<p>小米手机是一款由小米科技研发、由英华达和富士康代工制造的MIUI平台智能手机。</p>
+			  </div>
+			</div>
+			<div class="item">
+			  <img src="img/3.jpg" alt="3 slide">
+			  <div class="carousel-caption">
+				<h1>小米</h1>
+				<p>小米手机是一款由小米科技研发、由英华达和富士康代工制造的MIUI平台智能手机。</p>
+			  </div>
+			</div>
+		  </div>
+
+		  <!-- Controls -->
+		  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			<span class="sr-only">上一页</span>
+		  </a>
+		  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			<span class="sr-only">下一页</span>
+		  </a>
+		</div>
+		<!-- 栅栏布局 -->
+		<div class="container" id="phone-container">
+			<div class="row">
+			  <div class="col-md-4">
+				  <img class="img-circle" src="img/huawei.png" alt="huawei">
+				  <h2>HUAWEI</h2>
+				  <p>华为采用机器翻译与人工审校相结合的方式将此文档翻译成不同语言,希望能帮助您更容易理解此文档的内容。</p>
+				  <button class="btn btn-default" type="button">点击了解</button>
+			  </div>
+			  <div class="col-md-4">
+				  <img class="img-circle" src="img/iphone.jpg" alt="iphone">
+				  <h2>iPhone</h2>
+				  <p>iPhone，是苹果公司旗下研发的智能手机系列，它搭载苹果公司研发的iOS手机作业系统。</p>
+				  <button class="btn btn-default" type="button">点击了解</button>
+			  </div>
+			  <div class="col-md-4">
+				  <img class="img-circle" src="img/oppo.jpg" alt="oppo">
+				  <h2>OPPO</h2>
+				  <p>OPPO是更多年轻人选择的拍照手机品牌。国产手机越来越受青睐，在中国，更多年轻人选择OPPO拍照手机。</p>
+				  <button class="btn btn-default" type="button">点击了解</button>
+			  </div>
+			</div>
+			
+			<hr >
+			
+			<!-- 导航 -->
+		 	<ul class="nav nav-tabs" role="tablist">
+				<li class="active">
+					<a href="#huawei" role="tab" data-toggle="tab">
+						HUAWEI
+					</a>
+				</li>
+				<li>
+					<a href="#millet" role="tab" data-toggle="tab">
+						Millet
+					</a>
+				</li>
+				<li>
+					<a href="#iphone" role="tab" data-toggle="tab">
+						iPhone
+					</a>
+				</li>
+				<li>
+					<a href="#oppo" role="tab" data-toggle="tab">
+						OPPO
+					</a>
+				</li>
+				<li>
+					<a href="#vivo" role="tab" data-toggle="tab">
+						VIVO
+					</a>
+				</li>
+			</ul>
+			<!-- 内容介绍 -->
+			<div class="tab-content">
+				<div class="tab-pane active" id="huawei">
+					<div class="feature row">
+						<div class="col-md-7">
+							<h2 class="feature-heading">
+								HUAWEI
+								<span class="text-muted">用户首选</span>
+							</h2>
+							<p class="lead">华为技术有限公司成立于1987年，总部位于中国广东省深圳市龙岗区。 [1]  华为是全球领先的信息与通信技术（ICT）解决方案供应商，专注于ICT领域，坚持稳健经营、持续创新、开放合作，在电信运营商、企业、终端和云计算等领域构筑了端到端的解决方案优势，为运营商客户、企业客户和消费者提供有竞争力的ICT解决方案、产品和服务，并致力于实现未来信息社会、构建更美好的全联接世界。</p>
+						</div>
+					
+					<div class="col-md-5">
+						<img src="img/huawei.png" class="feature-img img-responsive" alt="huawei" >
+					</div>
+					</div>
+				</div>
+				<div class="tab-pane " id="millet">
+					<div class="feature row">
+					<div class="col-md-5">
+						<img src="img/millet.jpg" class="feature-img img-responsive" alt="millet" >
+					</div>
+						<div class="col-md-7">
+							<h2 class="feature-heading">
+								Millet
+								<span class="text-muted">用户首选</span>
+							</h2>
+							<p class="lead">小米公司正式成立于2010年4月，是一家专注于智能手机自主研发的移动互联网公司，定位于高性能发烧手机。小米手机、MIUI、米聊是小米公司旗下三大核心业务。“为发烧而生”是小米的产品理念。小米公司首创了用互联网模式开发手机操作系统、发烧友参与开发改进的模式。</p>
+						</div>
+					</div>
+				</div>
+				<div class="tab-pane " id="iphone">
+					<div class="feature row">
+						<div class="col-md-7">
+							<h2 class="feature-heading">
+								iPhone
+								<span class="text-muted">用户首选</span>
+							</h2>
+							<p class="lead">iPhone是由美国苹果公司研发的智能手机系列，搭载其研发的iOS操作系统。
+						2007年1月9日，第一代iPhone 2G发布；</p>
+						</div>		
+					<div class="col-md-5">
+						<img src="img/iphone.jpg" class="feature-img img-responsive" alt="iphone" >
+					</div>
+					</div>
+				</div>
+				<div class="tab-pane " id="oppo">
+					<div class="feature row">
+						<div class="col-md-5">
+							<img src="img/oppo.jpg" class="feature-img img-responsive" alt="oppo" >
+						</div>
+						<div class="col-md-7">
+							<h2 class="feature-heading">
+								OPPO
+								<span class="text-muted">用户首选</span>
+							</h2>
+							<p class="lead">OPPO广东移动通信有限公司，位于中国东莞，是专注于智能终端产品、软件和互联网服务的科技公司，由陈明永创立于2004年。OPPO业务遍及40多个国家和地区，拥有超过400,000个销售网点。OPPO在全球共有六大研究所和四大研发中心，拥有超过40,000名员工。</p>
+						</div>
+					</div>
+					
+				</div>
+				<div class="tab-pane " id="vivo">
+					<div class="feature row">
+						<div class="col-md-7">
+							<h2 class="feature-heading">
+								ViVO
+								<span class="text-muted">用户首选</span>
+							</h2>
+							<p class="lead">vivo为一个专注于智能手机领域的手机品牌，vivo和追求乐趣、充满活力、年轻时尚的群体一起打造拥有卓越外观、专业级音质、极致影像、愉悦体验的智能产品，并将敢于追求极致、持续创造惊喜作为vivo的坚定追求。</p>
+						</div>
+							
+					<div class="col-md-5">
+						<img src="img/vivo.jpg" class="feature-img img-responsive" alt="vivo">
+					</div>
+					</div>	
+				</div>
+			</div>
+			 
+			<hr >
+			<!-- 脚注 -->
+			<footer>
+				<p class="pull-right"><a href="#top">返回顶部</a></p>
+				<p>@ 2020 廖</p>
+			</footer>
+		</div>
+		
+				
+		<!-- 弹出窗 -->
+		<div class="modal fade" id="about">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">
+							<span>&times;</span><span class="sr-only">关闭弹窗</span>
+						</button>
+						<h4 class="modal-title">关于我们</h4>
+					</div>
+					<div class="modal-body">
+						联系方式:130******84
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-primary" data-dismiss="modal">关闭</button>
+						<button type="button" class="btn btn-primary active">了解</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-2.1.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#demo-navbar .dropdown-menu a").click(function(){
+					var href=$(this).attr("href");
+					$("#tab-list a[href'"+href+"']").tab("show");
+				});
+			});
+		</script>
+	</body>
+</html>
